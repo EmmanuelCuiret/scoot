@@ -1,0 +1,179 @@
+/*STYLE POUR L'ONGLET CAREERS*/
+
+.mission h2,
+.why-join h2 {
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+}
+
+.mission p,
+.reasons p,
+.job-listings-lieu {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: regular;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.job-listings-lieu {
+  color:#495567;
+}
+
+hero h1 {
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: white;
+}
+
+.reasons {
+  display: flex;
+  gap: 40px;
+}
+
+.reasons h3,
+.job-listings-grade {
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #333a44;
+}
+
+.icon1::after {
+  content: "01";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 33px;
+  top: 333px;
+}
+
+.icon2::after {
+  content: "02";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 333px;
+  top: 333px;
+}
+
+.icon3::after {
+  content: "03";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 597px;
+  top: 333px;
+}
+
+/* A METTRE DANS CSS GLOBAL */
+.header__link {
+  color: white;
+  font-family: "Space Mono";
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background: none;
+  border: none;
+  transition: all 0.3s ease; /* Animation douce pour le hover */
+}
+
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 53px;
+  width: 180px;
+  border: 2px solid transparent; /* Pour éviter les sauts quand la bordure change */
+  background-color: #fcb72b;
+  transition: all 0.3s ease; /* Animation douce pour le hover */
+}
+
+.button__container:hover {
+  border: 2px solid #fbb03b;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button__container:hover .header__link {
+  color: #fbb03b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-upper {
+    padding: 40px 80px;
+  }
+
+  .footer-lower {
+    padding: 35px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-upper {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 40px;
+  }
+
+  .footer-left h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .footer-lower {
+    padding: 35px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-upper {
+    padding: 40px 20px;
+  }
+
+  .footer-left h2 {
+    font-size: 32px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+
+  .footer-lower {
+    flex-direction: column;
+    padding: 35px 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-links a:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

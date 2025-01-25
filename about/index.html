@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoot - About</title>
+  <link rel="stylesheet" href="../styleHeaderFooter.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="navbar">
+      <h1 class="logo">scoot</h1>
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav__item">
+            <a href="/about/index.html" class="header__nav__item__link">About</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="/locations/index.html" class="header__nav__item__link">Location</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="/careers/index.html" class="header__nav__item__link">Careers</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="cta">Get Scootin</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Mobility for the digital era</h2>
+      <p>Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart
+        access to scooters at your fingertips.</p>
+      <div class="hero-images">
+        <img src="path-to-image" alt="Image of a person using a phone">
+        <img src="path-to-image" alt="City scene with transportation">
+      </div>
+    </section>
+
+    <section class="values">
+      <h2>Our values</h2>
+      <div class="value-card">
+        <h3>01</h3>
+        <p>Our tech</p>
+        <p>We’re using cutting-edge technology to drive accessible urban transportation forward. Our fully electric
+          scooters are a joy to ride!</p>
+      </div>
+      <div class="value-card">
+        <h3>02</h3>
+        <p>Our integrity</p>
+        <p>We are fully committed to delivering a great yet safe, sustainable micro-mobility experience in every city we
+          serve.</p>
+      </div>
+      <div class="value-card">
+        <h3>03</h3>
+        <p>Our community</p>
+        <p>We support every community we serve. All workers are paid a living wage based on their location and are Scoot
+          employees.</p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>FAQs</h2>
+      <div class="faq-item">
+        <h3>How do I download the app?</h3>
+        <p>To download the Scoot app, search “Scoot” in the App and Google Play stores.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Should I wear a helmet?</h3>
+        <p>Yes, please do! All cities have different laws, but we strongly recommend always wearing a helmet for safety.
+        </p>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+  fetch('../footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>

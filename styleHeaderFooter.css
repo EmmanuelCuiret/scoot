@@ -1,0 +1,88 @@
+/* Footer Styling */
+
+footer {
+  background-color: #495567;
+  color: white;
+  font-family: "Space Mono", monospace;
+}
+
+/* Upper Section */
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  padding: 40px 165px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-left h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.footer-right {
+  display: flex;
+  gap: 18px;
+}
+
+.app-link img[alt="App Store"] {
+  width: 159px;
+  height: 56px;
+}
+
+.app-link img[alt="Google Play"] {
+  width: 182px;
+  height: 56px;
+}
+
+/* Lower Section */
+.footer-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  padding: 35px 165px;
+  background-color: #333a44;
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #939caa;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.footer-links a:first-child {
+  color: white;
+  font-size: 34px;
+  margin-right: 26px;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+}
+
+.social-links a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Circle background */
+
+.footer-upper .circles {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 160px;
+}

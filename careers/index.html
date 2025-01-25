@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoot Careers</title>
+    <link rel="stylesheet" href="../styleHeaderFooter.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="header__nav">
+            <ul>
+                <li class="header__nav__item">
+                    <a href="/about/index.html" class="header__nav__item__link">About</a>
+                </li>
+                <li class="header__nav__item">
+                    <a href="/locations/index.html" class="header__nav__item__link">Location</a>
+                </li>
+                <li class="header__nav__item">
+                    <a href="/careers/index.html" class="header__nav__item__link">Careers</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Careers</h1>
+    </section>
+
+    <section class="mission">
+        <h2>Care to join our mission?</h2>
+        <p>We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our
+            mission to provide clean, accessible transport to improve urban living, we want to hear from you!</p>
+        <div class="button__container">
+            <button class="header__link">Say Hello</button>
+        </div>
+        <div>
+            <img class="team-image" src="../ressources/Bitmap.png" alt="Team working together">
+            <img class="features_shadow_img" src="../ressources/RondMask.png" alt="Rond gris" />
+        </div>
+    </section>
+
+    <section class="why-join">
+        <h2>Why join us?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <div class="features">
+                    <img class="features_img" src="../ressources/OutTech.png" alt="OutTech" />
+                </div>
+                <div class="icon1">
+                    <img src="../ressources/RondOrange.png" alt="Rond orange">
+                </div>
+                <h3>Our tech</h3>
+                <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully
+                    electric scooters are a joy to ride!</p>
+            </div>
+            <div class="reason">
+                <div class="features">
+                    <img class="features_img" src="../ressources/OurIntegrity.png" alt="OutIntegrity" />
+                </div>
+                <div class="icon2">
+                    <img src="../ressources/RondOrange.png" alt="Rond orange">
+                </div>
+                <h3>Our integrity</h3>
+                <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in
+                    every
+                    city we serve.</p>
+            </div>
+            <div class="reason">
+                <div class="features">
+                    <img class="features_img" src="../ressources/OurCommunity.png" alt="OutCommunity" />
+                </div>
+                <div class="icon3">
+                    <img src="../ressources/RondOrange.png" alt="Rond orange">
+                </div>
+                <h3>Our community</h3>
+                <p>We support every community we serve. All workers are paid a living wage based on their location
+                    and
+                    are Scoot employees.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-listings">
+        <ul>
+            <li>
+                <span class="job-listings-grade">General Manager</span>
+                <span class="job-listings-lieu">Jakarta, Indonesia</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+            <li>
+                <span class="job-listings-grade">UI/UX Designer</span>
+                <span class="job-listings-lieu">Yokohama, Japan</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+            <li>
+                <span class="job-listings-grade">Blog Content Copywriter</span>
+                <span class="job-listings-lieu">New York, United States</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+            <li>
+                <span class="job-listings-grade">Graphic Designer</span>
+                <span class="job-listings-lieu">New York, United States</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+            <li>
+                <span class="job-listings-grade">Fleet Supervisor</span>
+                <span class="job-listings-lieu">Jakarta, Indonesia</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+            <li>
+                <span class="job-listings-grade">UX Analyst</span>
+                <span class="job-listings-lieu">London, United Kingdom</span>
+                <div class="button__container">
+                    <a href="#" class="header__link">Apply</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+<div id="footer"></div>
+
+<script>
+    fetch('../footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+
+</html>
