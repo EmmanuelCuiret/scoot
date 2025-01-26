@@ -149,9 +149,9 @@ body {
 
 .scooter__p:before {
   position: absolute;
-  content: url("/ressources/Path2.svg");
+  content: url("/ressources/Path2.png");
   top: 80%;
-  left: -62%;
+  left: -10050px;
   width: 100vw;
   height: auto;
 }
@@ -192,11 +192,13 @@ body {
 .container__features__hr {
   position: absolute;
   background-color: #e5ecf4;
+  border: none;
   border: 15px solid #e5ecf4;
-  width: 974px;
+  left: 0px;
+  margin-left: -9999px;
+  width: 10800px;
   height: 15px;
   top: 35px;
-  left: -155px;
   z-index: -1;
 }
 
@@ -370,6 +372,14 @@ body {
   outline: none;
 }
 
+.prolongementEasyToUse {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  top: -910px;
+  left: 1200px;
+}
+
 .features2__2__img,
 .features2__2__shadow__img {
   position: relative;
@@ -379,12 +389,28 @@ body {
   outline: none;
 }
 
+.prolongementComingTo {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  top: -605px;
+  left: -9999px;
+}
+
 .features2__3__img,
 .features2__3__shadow__img {
   border: none;
   width: 445px;
   height: 445px;
   outline: none;
+}
+
+.prolongementZeroHassle {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  top: 80px;
+  left: 1200px;
 }
 
 /*****************/

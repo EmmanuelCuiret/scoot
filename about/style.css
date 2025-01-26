@@ -1,10 +1,273 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+/*************/
+/*La bannière*/
+/*************/
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/ressources/BannerOthers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 120px;
 }
 
-* {
-  display: revert;
+.banner img {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 33%;
+  right: -30px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 1110px;
+  height: 100%;
+}
+
+.banner-container h1 {
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: white;
+}
+
+.prolongementMobility {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  top: -206px;
+  left: 1200px;
+}
+
+.prolongementBetter {
+  position: absolute;
+  width: auto;
+  height: 15px;
+  top: 0px;
+  left: -9999px;
+}
+
+/************/
+/*Our values*/
+/************/
+
+.features2__row1__rightSide::after {
+  position: absolute;
+  content: url("/ressources/Group34.svg");
+  width: 200px;
+  height: 100px;
+  top: 59%;
+  left: -12%;
+}
+
+.our-values h2,
+.faq-section h1 {
+  font-family: "Space Mono";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.reasons p,
+.job-listings-lieu {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: regular;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.job-listings-lieu {
+  color: #495567;
+}
+
+.reasons h3,
+.job-listings-grade {
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #333a44;
+}
+
+.icon1::after {
+  content: "01";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 35px;
+  top: 35px;
+}
+
+.icon2::after {
+  content: "02";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 35px;
+  top: 35px;
+}
+
+.icon3::after {
+  content: "03";
+  position: absolute;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  left: 35px;
+  top: 35px;
+}
+
+.reason h3 {
+  margin-bottom: 30px;
+}
+
+.why-join h2 {
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  height: 512px;
+  gap: 40px;
+  margin-bottom: 119px;
+}
+
+.reason {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  width: 350px;
+  height: 512px;
+}
+
+.reason_feature {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.reason_feature_img {
+  display: block;
+  height: auto;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-170%);
+}
+
+/**********/
+/*  FAQs  */
+/**********/
+
+.faq-section {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 160px;
+}
+
+.faq-section-container {
+  display: flex;
+  max-width: 100%;
+}
+
+.faq-left-side h2 {
+  display: flex;
+  flex: 1;
+  font-family: "Space Mono";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: #495567;
+  width: 350px;
+}
+
+.faq-right-side {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  .faq-item {
+    margin-bottom: 16px;
+  }
+
+  .faq-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    background-color: #f2f5f9;
+    color: #495567;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 32px 40px;
+  }
+
+  .faq-item button:hover {
+    background: #fff4df;
+  }
+
+  .faq-item button .chevron {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item button .chevron.open {
+    transform: rotate(180deg);
+  }
+
+  .faq-item .content {
+    display: none;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-weight: regular;
+    line-height: 25px;
+    background-color: #f2f5f9;
+    color: #495567;
+    padding: 0 40px 40px 40px;
+  }
+
+  .faq-item .content.open {
+    display: block;
+  }
 }

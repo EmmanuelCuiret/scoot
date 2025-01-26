@@ -13,6 +13,49 @@ body {
   border: none;
 }
 
+/*************/
+/*La bannière*/
+/*************/
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/ressources/BannerOthers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+.banner img {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 33%;
+  right: -30px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 1110px;
+  height: 100%;
+}
+
+.banner-container h1 {
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: white;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .footer-upper {
@@ -71,37 +114,23 @@ body {
   }
 }
 
-/*STYLE POUR L'ONGLET LOCATIONS*/
-
-/*
-
-.locations {
-  border : 2px solid red;
-  background-image: url("/ressources/BannerOthers.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  margin-bottom: 120px;
-}
-
-*/
-
 .locations h2 {
   font-family: "Space Mono";
   font-size: 56px;
   font-weight: bold;
   line-height: 56px;
   letter-spacing: -2.5px;
-  color: white; 
+  color: white;
 }
 
 .locations-h2 {
   display: flex;
   margin: 0 auto;
   align-content: center;
-  border : 2px solid blue;
+  border: 2px solid blue;
   width: 1110px;
   height: 200px;
+  margin-bottom: 120px;
 }
 
 .map {
@@ -191,10 +220,10 @@ body {
 }
 
 .city-request {
-  display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
+  display: flex;
   align-items: center; /* Centre verticalement les éléments */
   justify-content: space-between; /* Répartit les éléments avec un espace égal */
-  width: 1110px; /* Définit la largeur de la ligne */
+  width: 1110px;
   height: 100px;
   margin: 0 auto; /* Centre la section horizontalement dans la page */
   gap: 85px;

@@ -7,7 +7,7 @@
   <title>Scoot - About</title>
   <link rel="stylesheet" href="/styleHeaderFooter.css">
   <link rel="stylesheet" href="/styleGlobal.css">
-  
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,52 +29,174 @@
       .catch(error => console.error('Error loading footer:', error));
   </script>
 
-  <main>
-    <section class="hero">
-      <h2>Mobility for the digital era</h2>
-      <p>Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart
-        access to scooters at your fingertips.</p>
-      <div class="hero-images">
-        <img src="path-to-image" alt="Image of a person using a phone">
-        <img src="path-to-image" alt="City scene with transportation">
-      </div>
-    </section>
+  <section class="banner">
+    <div class="circles">
+      <img class="banner-container-3circles" src="/ressources/Group26.png" alt="3 circles">
+    </div>
+    <div class="banner-container">
+      <h1>About</h1>
+    </div>
+  </section>
 
-    <section class="values">
-      <h2>Our values</h2>
-      <div class="value-card">
-        <h3>01</h3>
-        <p>Our tech</p>
-        <p>We’re using cutting-edge technology to drive accessible urban transportation forward. Our fully electric
-          scooters are a joy to ride!</p>
+  <div class="container__features2">
+    <section class="features2">
+      <div class="features2__row1">
+        <div class="features2__row1__leftSide">
+          <h2 class="features2__h2">Mobility for the digital era</h2>
+          <p class="features2__p">Getting around should be simple (and even fun!) for everyone. We embrace technology to
+            provide low cost, smart access to scooters at your fingertips.</p>
+        </div>
+        <div class="features2__row1__rightSide">
+          <img class="features2__1__img" src="/ressources/MobilityForThe DigitalEra.png"
+            alt="of a person using a phone">
+          <img class="features2__1__shadow__img" src="/ressources/RondMask.png" alt="Rond gris" />
+          <img class="leftBottomArrow" />
+        </div>
       </div>
-      <div class="value-card">
-        <h3>02</h3>
-        <p>Our integrity</p>
-        <p>We are fully committed to delivering a great yet safe, sustainable micro-mobility experience in every city we
-          serve.</p>
-      </div>
-      <div class="value-card">
-        <h3>03</h3>
-        <p>Our community</p>
-        <p>We support every community we serve. All workers are paid a living wage based on their location and are Scoot
-          employees.</p>
-      </div>
-    </section>
 
-    <section class="faq">
-      <h2>FAQs</h2>
-      <div class="faq-item">
-        <h3>How do I download the app?</h3>
-        <p>To download the Scoot app, search “Scoot” in the App and Google Play stores.</p>
+      <div class="features2__row2">
+        <div class="features2__row2__leftSide">
+          <h2 class="features2__h2">Better urban living</h2>
+          <p class="features2__p">We’re helping connect cities and bring people closer together. Our scooters are also
+            fully-electric and we offset the minimal carbon footprint for each ride.</p>
+        </div>
+        <div class="features2__row2__rightSide">
+          <img class="features2__2__shadow__img" src="/ressources/RondMask.png" alt="Rond gris" />
+          <img class="features2__2__img" src="/ressources/BetterUrbanLiving.png" alt="City scene with transportation">
+        </div>
+        <img class="prolongementMobility" src="/ressources/Path2.png" alt="Prolongement de la flèche">
+        <img class="prolongementBetter" src="/ressources/Path2.png" alt="Prolongement de la flèche">
       </div>
-      <div class="faq-item">
-        <h3>Should I wear a helmet?</h3>
-        <p>Yes, please do! All cities have different laws, but we strongly recommend always wearing a helmet for safety.
-        </p>
-      </div>
+
     </section>
-  </main>
+  </div>
+
+  <section class="our-values">
+    <h2>Our values</h2>
+    <div class="reasons">
+      <div class="reason">
+        <div class="reason_feature">
+          <img class="reason_feature_img" src="/ressources/OutTech.png" alt="OutTech" />
+        </div>
+        <div class="icon1">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
+        </div>
+        <h3>Our tech</h3>
+        <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully
+          electric scooters are a joy to ride!</p>
+      </div>
+      <div class="reason">
+        <div class="reason_feature">
+          <img class="reason_feature_img" src="/ressources/OurIntegrity.png" alt="OutIntegrity" />
+        </div>
+        <div class="icon2">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
+        </div>
+        <h3>Our integrity</h3>
+        <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in
+          every
+          city we serve.</p>
+      </div>
+      <div class="reason">
+        <div class="reason_feature">
+          <img class="reason_feature_img" src="/ressources/OurCommunity.png" alt="OutCommunity" />
+        </div>
+        <div class="icon3">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
+        </div>
+        <h3>Our community</h3>
+        <p>We support every community we serve. All workers are paid a living wage based on their location
+          and
+          are Scoot employees.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h1>FAQs</h1>
+
+    <div class="faq-section-container">
+
+      <div class="faq-left-side">
+        <h2>How it works</h2>
+      </div>
+
+      <div class="faq-right-side">
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">How do I download the app?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores.
+            An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be
+            re-directed to the correct page.</div>
+        </div>
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">Can I find a nearby Scoots?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">Yes, you can find nearby Scoots by enabling location services on the app.</div>
+        </div>
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">Do I need a license to ride?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">No, a license is not required for Scoot rides in most areas.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-section-container">
+
+      <div class="faq-left-side">
+        <h2>Safe driving</h2>
+      </div>
+
+      <div class="faq-right-side">
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">Should I wear a helmet?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">Yes, please do! All cities have different laws. But we strongly strongly strongly
+            recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as
+            possible while Scooting.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">How about the rules & regulations?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">Rules and regulations vary by location. Please check the app for details.</div>
+        </div>
+
+        <div class="faq-item">
+          <button onclick="toggleContent(this)">What if I damage my Scoot?
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
+          </button>
+          <div class="content">In case of damage, please report it immediately through the app or contact support.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleContent(button) {
+      const content = button.nextElementSibling;
+      const chevron = button.querySelector('.chevron');
+      const isOpen = content.classList.contains('open');
+
+      // Ferme tous les items ouverts
+      document.querySelectorAll('.faq-item .content').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.faq-item .chevron').forEach(c => c.classList.remove('open'));
+
+      //Bascule l'élément actuel
+      if (!isOpen) {
+        content.classList.add('open');
+        chevron.classList.add('open');
+      }
+    }
+  </script>
 
 </body>
 
@@ -88,5 +210,3 @@
     })
     .catch(error => console.error('Error loading footer:', error));
 </script>
-
-</html>

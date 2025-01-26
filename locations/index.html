@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scoot Locations</title>
+  <title>Scoot - Locations</title>
   <link rel="stylesheet" href="/styleHeaderFooter.css" />
   <link rel="stylesheet" href="/styleGlobal.css">
 
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <div id="header"></div>
 
   <script>
@@ -28,40 +29,46 @@
       .catch(error => console.error('Error loading footer:', error));
   </script>
 
-  <main>
-    <section class="locations">
-      <div class="locations-h2">
-        <h2>Locations</h2>
-      </div>
-      <div class="map">
-        <img class="map-img" src="/ressources/Carteblanche.png">
+  <section class="banner">
+    <div class="circles">
+      <img class="banner-container-3circles" src="/ressources/Group26.png" alt="3 circles">
+    </div>
+    <div class="banner-container">
+      <h1>Locations</h1>
+    </div>
+  </section>
 
-        <div class="pin_container pin_container_position1">
-          <div class="pin_text pin1">New York</div>
-        </div>
-        <div class="pin_container pin_container_position2">
-          <div class="pin_text pin2">London</div>
-        </div>
-        <div class="pin_container pin_container_position3">
-          <div class="pin_text pin3">Yokohama</div>
-        </div>
-        <div class="pin_container pin_container_position4">
-          <div class="pin_text pin4">Jakarta</div>
-        </div>
-      </div>
-    </section>
 
-    <section class="city-request">
-      <h3>Your city not listed?</h3>
-      <p>
-        If you'd like to see Scoot in your hometown, be sure to let us know.
-        We track requests and plan launches based on demand. Feel free to
-        message us by clicking the link or messaging us on social.
-      </p>
-      <div class="button__container">
-        <a href="#" class="button__link">Message Us</a>
+  <section class="locations">
+    <div class="map">
+      <img class="map-img" src="/ressources/Carteblanche.png">
+
+      <div class="pin_container pin_container_position1">
+        <div class="pin_text pin1">New York</div>
       </div>
-    </section>
+      <div class="pin_container pin_container_position2">
+        <div class="pin_text pin2">London</div>
+      </div>
+      <div class="pin_container pin_container_position3">
+        <div class="pin_text pin3">Yokohama</div>
+      </div>
+      <div class="pin_container pin_container_position4">
+        <div class="pin_text pin4">Jakarta</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="city-request">
+    <h3>Your city not listed?</h3>
+    <p>
+      If you'd like to see Scoot in your hometown, be sure to let us know.
+      We track requests and plan launches based on demand. Feel free to
+      message us by clicking the link or messaging us on social.
+    </p>
+    <div class="button__container">
+      <a href="#" class="button__link">Message Us</a>
+    </div>
+  </section>
   </main>
 
   <div id="footer"></div>
