@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scoot</title>
-  <link rel="stylesheet" href="styleGlobal.css" />
+  <link rel="stylesheet" href="/styleHeaderFooter.css" />
+  <link rel="stylesheet" href="/styleGlobal.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,33 +16,17 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__container">
-      <!--A TRAITER SUR MOBILE-->
-      <img class="hamburger" style="display: none" />
-      <div class="header-left">
-        <h1 class="h1__scoot"></h1>
 
-        <nav class="header__nav">
-          <ul>
-            <li class="header__nav__item">
-              <a href="/about/index.html" class="header__nav__item__link">About</a>
-            </li>
-            <li class="header__nav__item">
-              <a href="/locations/index.html" class="header__nav__item__link">Location</a>
-            </li>
-            <li class="header__nav__item">
-              <a href="/careers/index.html" class="header__nav__item__link">Careers</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div id="header"></div>
 
-      <div class="button__container">
-        <a href="#" class="header__link">Get Scootin</a>
-      </div>
-    </div>
-  </header>
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
 
   <div class="container__scooter">
     <section class="section_scooter">
@@ -54,18 +39,18 @@
         </p>
       </div>
       <div class="button__container addon_img__scooter">
-        <a href="#" class="header__link">Get Scootin</a>
+        <a href="#" class="button__link">Get Scootin</a>
       </div>
     </section>
     <div class="container__scooter__img__arrow_line"></div>
     <div class="container__scooter__img__arrow__right__bottom"><img class="container__scooter__3circles"
-        src="./ressources/Group26.png"></div>
+        src="/ressources/Group26.png"></div>
   </div>
 
   <div class="container__features">
     <section class="features">
       <div class="features__div_1">
-        <img class="features__1__img" src="./ressources/Group8.svg" />
+        <img class="features__1__img" src="/ressources/Group8.svg" />
         <h2 class="features__1__h2">Locate with app</h2>
         <p class="features__1__p">
           Use the app to find the nearest scooter to you. We are continuously
@@ -74,7 +59,7 @@
         </p>
       </div>
       <div class="features__div_2">
-        <img class="features__2__img" src="./ressources/Group9.svg" />
+        <img class="features__2__img" src="/ressources/Group9.svg" />
         <h2 class="features__2__h2">Pick your scooter</h2>
         <p class="features__2__p">
           We show the most important info for the scooters closest to you. So
@@ -83,7 +68,7 @@
         </p>
       </div>
       <div class="features__div_3">
-        <img class="features__3__img" src="./ressources/Group10.svg" />
+        <img class="features__3__img" src="/ressources/Group10.svg" />
         <h2 class="features__3__h2">Enjoy the ride</h2>
         <p class="features__3__p">
           Scan the QR code and the bike will unlock. Retract the cable lock,
@@ -107,12 +92,12 @@
             easy to use app.
           </p>
           <div class="button__container">
-            <a href="#" class="header__link">Learn more</a>
+            <a href="#" class="button__link">Learn more</a>
           </div>
         </div>
         <div class="features2__row1__rightSide">
-          <img class="features2__1__img" src="./ressources/EasyToUseRifingTelemetry.png" />
-          <img class="features2__1__shadow__img" src="./ressources/RondMask.png" />
+          <img class="features2__1__img" src="/ressources/EasyToUseRifingTelemetry.png" />
+          <img class="features2__1__shadow__img" src="/ressources/RondMask.png" />
           <img class="leftBottomArrow" />
         </div>
       </div>
@@ -127,12 +112,12 @@
             the coming year.
           </p>
           <div class="button__container addon">
-            <a href="#" class="header__link">Learn more</a>
+            <a href="#" class="button__link">Learn more</a>
           </div>
         </div>
         <div class="features2__row2__rightSide">
-          <img class="features2__2__shadow__img" src="./ressources/RondMask.png" />
-          <img class="features2__2__img" src="./ressources/ComingTocCityNearYou.png">
+          <img class="features2__2__shadow__img" src="/ressources/RondMask.png" />
+          <img class="features2__2__img" src="/ressources/ComingTocCityNearYou.png">
         </div>
       </div>
       <div class="features2__row3">
@@ -145,50 +130,27 @@
             payment for up to a month.
           </p>
           <div class="button__container">
-            <a href="#" class="header__link">Learn more</a>
+            <a href="#" class="button__link">Learn more</a>
           </div>
         </div>
         <div class="features2__row3__rightSide">
-          <img class="features2__3__img" src="./ressources/ZeroHasslePayments.png" />
-          <img class="features2__3__shadow__img" src="./ressources/RondMask.png" />
+          <img class="features2__3__img" src="/ressources/ZeroHasslePayments.png" />
+          <img class="features2__3__shadow__img" src="/ressources/RondMask.png" />
         </div>
       </div>
     </section>
   </div>
 </body>
 
-<footer>
-  <div class="footer-upper">
-    <div class="circles">
-      <img src="./ressources/Circles.png" alt="3 circles" />
-    </div>
-    <div class="footer-left">
-      <h2>Sign up and<br />Scoot off today</h2>
-    </div>
-    <div class="footer-right">
-      <div class="app-links">
-        <a href="#" class="app-link">
-          <img src="./ressources/AppStore.svg" alt="App Store" />
-        </a>
-        <a href="#" class="app-link">
-          <img src="./ressources/GooglePlay.svg" alt="Google Play" />
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-lower">
-    <div class="footer-links">
-      <a href="index.html">Scoot</a>
-      <a href="/about/index.html">About</a>
-      <a href="/locations/index.html">Location</a>
-      <a href="/careers/index.html">Careers</a>
-    </div>
-    <div class="social-links">
-      <a href="#"><img src="./ressources/Facebook.svg" alt="Facebook" /></a>
-      <a href="#"><img src="./ressources/Twitter.svg" alt="Twitter" /></a>
-      <a href="#"><img src="./ressources/Instagram.svg" alt="Instagram" /></a>
-    </div>
-  </div>
-</footer>
+<div id="footer"></div>
+
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
 
 </html>

@@ -1,22 +1,6 @@
 body {
-  /*max-width: 1110px;*/
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  width: 1106px;
-  height: 53px + 44px;
-  margin: 0 auto;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 22px 0;
   box-sizing: border-box;
 }
 
@@ -27,76 +11,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: none;
-}
-
-.header-left > :first-child {
-  align-self: flex-start; /* Aligne uniquement le premier enfant en haut */
-}
-
-.header-left > :last-child {
-  align-self: flex-end; /* Aligne uniquement le premier enfant en haut */
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1440px - 180px;
-  gap: 100px;
-}
-
-.h1__scoot {
-  display: flex;
-  background-image: var(--dynamic-image-Scoot);
-  background-repeat: no-repeat;
-  align-items: center;
-  width: 107.82px;
-  height: 28.56px;
-}
-
-.h1__scoot:hover {
-  cursor: pointer;
-}
-
-/*Menu du header*/
-
-.header__nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: end;
-  margin: 0;
-  padding: 0;
-  color: #939caa;
-  font-family: "Space Mono";
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  gap: 15px; /* Adjust spacing as needed */
-
-  .header__nav__item {
-    margin: 0 15px;
-  }
-
-  .header__nav__item:hover {
-    cursor: pointer;
-  }
-
-  .header__nav__item__link {
-    text-decoration: none;
-    color: #939caa;
-  }
-}
-
-.footer-lower::before {
-  content: "";
-  position: absolute;
-  top: -160px; /* Adjust based on the height of the circles */
-  right: 0;
-  height: 160px;
-  width: 160px;
-  background: url("../ressources/Circles.png") no-repeat;
-  background-size: cover;
-  z-index: 2; /* Ensure circles are on top of the darker background */
 }
 
 /* Responsive Design */
@@ -159,6 +73,45 @@ body {
 
 /*STYLE POUR L'ONGLET LOCATIONS*/
 
+/*
+
+.locations {
+  border : 2px solid red;
+  background-image: url("/ressources/BannerOthers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 120px;
+}
+
+*/
+
+.locations h2 {
+  font-family: "Space Mono";
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: white; 
+}
+
+.locations-h2 {
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+  border : 2px solid blue;
+  width: 1110px;
+  height: 200px;
+}
+
+.map {
+  position: relative;
+  width: 1110px;
+  height: 543px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
 .city-request h3 {
   font-family: "Space Mono";
   font-size: 48px;
@@ -181,38 +134,51 @@ body {
 }
 
 .pin_container {
-  justify-content: center;
   position: absolute;
-  background: url("../ressources/PinLocation.png") no-repeat;
+  display: flex;
+  justify-content: center;
+  background: url("/ressources/PinLocation.png") no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   height: 88px;
   width: 189px;
 }
 
+.map {
+  position: relative;
+  width: 1110px;
+  height: 543px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
 .pin_container_position1 {
-  left: 100px;
-  top: 300px;
+  position: absolute;
+  left: 149px;
+  top: 68px;
 }
 
 .pin_container_position2 {
-  left: 300px;
-  top: 300px;
+  position: absolute;
+  left: 393px;
+  top: 16px;
 }
 
 .pin_container_position3 {
-  left: 500px;
-  top: 300px;
+  position: absolute;
+  left: 857px;
+  top: 75px;
 }
 
 .pin_container_position4 {
-  left: 700px;
-  top: 300px;
+  position: absolute;
+  left: 780px;
+  top: 250px;
 }
 
 .pin_text {
-  position: absolute;
   display: flex;
+  position: absolute;
   color: #495567;
   font-family: "Space Mono";
   font-size: 24px;
@@ -221,52 +187,24 @@ body {
   border: none;
   letter-spacing: -1.07px;
   line-height: 28px;
-
-  .pin2 {
-    top: 20px;
-    left: 322%;
-  }
-
-  .pin3 {
-    top: 20px;
-    left: 422%;
-  }
-
-  .pin4 {
-    top: 20px;
-    left: 622%;
-  }
+  top: 20px;
 }
 
-/*A REMETTRE DANS LE GLOBAL */
-.header__link {
-  color: white;
-  font-family: "Space Mono";
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  background: none;
-  border: none;
-  transition: all 0.3s ease; /* Animation douce pour le hover */
+.city-request {
+  display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Répartit les éléments avec un espace égal */
+  width: 1110px; /* Définit la largeur de la ligne */
+  height: 100px;
+  margin: 0 auto; /* Centre la section horizontalement dans la page */
+  gap: 85px;
+  margin-bottom: 120px;
 }
 
-.button__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 53px;
-  width: 180px;
-  border: 2px solid transparent; /* Pour éviter les sauts quand la bordure change */
-  background-color: #fcb72b;
-  transition: all 0.3s ease; /* Animation douce pour le hover */
+.city-request h3 {
+  width: 320px;
 }
 
-.button__container:hover {
-  border: 2px solid #fbb03b;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.button__container:hover .header__link {
-  color: #fbb03b;
+.city-request p {
+  width: 445px;
 }

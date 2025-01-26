@@ -5,30 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scoot - About</title>
-  <link rel="stylesheet" href="../styleHeaderFooter.css">
+  <link rel="stylesheet" href="/styleHeaderFooter.css">
+  <link rel="stylesheet" href="/styleGlobal.css">
+  
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="navbar">
-      <h1 class="logo">scoot</h1>
-      <nav class="header__nav">
-        <ul>
-          <li class="header__nav__item">
-            <a href="/about/index.html" class="header__nav__item__link">About</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="/locations/index.html" class="header__nav__item__link">Location</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="/careers/index.html" class="header__nav__item__link">Careers</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="cta">Get Scootin</button>
-    </div>
-  </header>
+
+  <div id="header"></div>
+
+  <script>
+    fetch('/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
 
   <main>
     <section class="hero">
@@ -82,7 +81,7 @@
 <div id="footer"></div>
 
 <script>
-  fetch('../footer.html')
+  fetch('/footer.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer').innerHTML = data;
