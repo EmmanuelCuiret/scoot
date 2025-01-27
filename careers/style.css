@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/ressources/BannerOthers.png");
+  background-image: url("/scoot/ressources/BannerOthers.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
