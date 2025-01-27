@@ -115,12 +115,12 @@ footer {
   gap: 18px;
 }
 
-.app-link img[alt="App Store"] {
+.app-link img {
   width: 159px;
   height: 56px;
 }
 
-.app-link img[alt="Google Play"] {
+.app-link img {
   width: 182px;
   height: 56px;
 }
@@ -187,7 +187,7 @@ footer {
 }
 
 .social-links-twitter {
-  background-image: url("./ressources/Twitter.svg");
+  background-image: url("/scoot/ressources/Twitter.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -195,12 +195,12 @@ footer {
 }
 
 .social-links-twitter:hover {
-  background-image: url("./ressources/Twitter2.svg");
+  background-image: url("/scoot/ressources/Twitter2.svg");
   cursor: pointer;
 }
 
 .social-links-instagram {
-  background-image: url("./ressources/Instagram.svg");
+  background-image: url("/scoot/ressources/Instagram.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -208,7 +208,7 @@ footer {
 }
 
 .social-links-instagram:hover {
-  background-image: url("./ressources/Instagram2.svg");
+  background-image: url("/scoot/ressources/Instagram2.svg");
   cursor: pointer;
 }
 
