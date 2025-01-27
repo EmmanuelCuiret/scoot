@@ -13,11 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
-</head>
-
-<body>
-
-  <div id="header"></div>
 
 <script>
   async function loadHeader() {
@@ -33,6 +28,27 @@
   loadHeader();
 
 </script>
+
+<script>
+  async function loadFooter() {
+    try {
+      const response = await fetch('/footer.html');
+      const data = await response.text();
+      document.getElementById('footer').innerHTML = data;
+    } catch (error) {
+      console.error('Error loading footer:', error);
+    }
+  }
+
+  loadFooter();
+</script>
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
 
   <div class="container__scooter">
     <section class="section_scooter">
@@ -152,20 +168,5 @@
 </body>
 
 <div id="footer"></div>
-
-<script>
-  async function loadFooter() {
-    try {
-      const response = await fetch('/footer.html');
-      const data = await response.text();
-      document.getElementById('footer').innerHTML = data;
-    } catch (error) {
-      console.error('Error loading footer:', error);
-    }
-  }
-
-  loadFooter();
-</script>
-
 
 </html>
