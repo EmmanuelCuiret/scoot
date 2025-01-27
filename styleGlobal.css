@@ -48,15 +48,6 @@ body {
   --dynamic-image-Scoot: url("/ressources/Scoot.svg");
 }
 
-.hamburger {
-  background-image: var(--dynamic-image-hamburger);
-  width: 32px;
-  height: 32px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-}
-
 /*Les boutons*/
 .button__link {
   color: white;
@@ -416,6 +407,17 @@ body {
 /* MEDIA QUERIES */
 /*****************/
 
+/*MANU DESKTOP*/
+
+/* Cacher le bouton Hamburger pour les écrans larges */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/*MANU TABLETTE*/
+
 @media (max-width: 768px) {
   .footer-upper {
     flex-direction: column;
@@ -433,7 +435,14 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+/*MANU SMARTPHONE*/
+/* Cacher le bouton Hamburger pour les écrans larges */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /*GUILLAUME*/
   .footer-upper {
     padding: 40px 20px;
   }
@@ -462,3 +471,4 @@ body {
     margin-bottom: 20px;
   }
 }
+

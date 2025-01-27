@@ -15,6 +15,27 @@
     rel="stylesheet" />
     
     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.getElementById("hamburger");
+      const close = document.getElementById("close");
+      const menu = document.getElementById("menu");
+
+      // Open menu
+      hamburger.addEventListener("click", () => {
+        menu.classList.add("open");
+        hamburger.classList.add("hidden"); // Cache le bouton hamburger
+      });
+
+      // Close menu
+      close.addEventListener("click", () => {
+        menu.classList.remove("open");
+        hamburger.classList.remove("hidden"); // Cache le bouton hamburger
+      });
+    });
+  </script>
+
+    
+    <script>
   async function loadHeader() {
     try {
       const response = await fetch('/scoot/header.html');
@@ -48,8 +69,18 @@
 
 <body>
 
-  <div id="header"></div>
+ <button id="hamburger" class="hamburger">☰</button>
+  <div id="menu" class="menu">
+    <button id="close" class="close">✕</button>
+    <ul>
+      <li><a href="#scoot">Scoot</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#locations">Locations</a></li>
+      <li><a href="#careers">Careers</a></li>
+    </ul>
+  </div>
 
+  <div id="header"></div>
 
   <div class="container__scooter">
     <section class="section_scooter">
