@@ -174,7 +174,7 @@ footer {
 }
 
 .social-links-facebook {
-  background-image: url("/ressources/Facebook.svg");
+  background-image: url("/scoot/ressources/Facebook.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -182,12 +182,12 @@ footer {
 }
 
 .social-links-facebook:hover {
-  background-image: url("/ressources/Facebook2.svg");
+  background-image: url("/scoot/ressources/Facebook2.svg");
   cursor: pointer;
 }
 
 .social-links-twitter {
-  background-image: url("/ressources/Twitter.svg");
+  background-image: url("./ressources/Twitter.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -195,12 +195,12 @@ footer {
 }
 
 .social-links-twitter:hover {
-  background-image: url("/ressources/Twitter2.svg");
+  background-image: url("./ressources/Twitter2.svg");
   cursor: pointer;
 }
 
 .social-links-instagram {
-  background-image: url("/ressources/Instagram.svg");
+  background-image: url("./ressources/Instagram.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -208,7 +208,7 @@ footer {
 }
 
 .social-links-instagram:hover {
-  background-image: url("/ressources/Instagram2.svg");
+  background-image: url("./ressources/Instagram2.svg");
   cursor: pointer;
 }
 
