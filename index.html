@@ -19,14 +19,20 @@
 
   <div id="header"></div>
 
-  <script>
-    fetch('/header_footer/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+<script>
+  async function loadHeader() {
+    try {
+      const response = await fetch('/header.html');
+      const data = await response.text();
+      document.getElementById('header').innerHTML = data;
+    } catch (error) {
+      console.error('Error loading header:', error);
+    }
+  }
+
+  loadHeader();
+
+</script>
 
   <div class="container__scooter">
     <section class="section_scooter">
@@ -148,12 +154,18 @@
 <div id="footer"></div>
 
 <script>
-  fetch('/header_footer/footer.html')
-    .then(response => response.text())
-    .then(data => {
+  async function loadFooter() {
+    try {
+      const response = await fetch('/footer.html');
+      const data = await response.text();
       document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
+    } catch (error) {
+      console.error('Error loading footer:', error);
+    }
+  }
+
+  loadFooter();
 </script>
+
 
 </html>
