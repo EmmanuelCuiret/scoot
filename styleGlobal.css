@@ -149,7 +149,7 @@ body {
 
 .scooter__p:before {
   position: absolute;
-  content: url("/ressources/Path2.png");
+  content: url("/scoot/ressources/Path2.png");
   top: 80%;
   left: -10050px;
   width: 100vw;
@@ -158,7 +158,7 @@ body {
 
 .scooter__p:after {
   position: absolute;
-  content: url("/ressources/Group8Copy.svg");
+  content: url("/scoot/ressources/Group8Copy.svg");
   top: 80%;
   left: 112%;
 }
@@ -315,7 +315,7 @@ body {
 
 .features2__row1__rightSide::after {
   position: absolute;
-  content: url("/ressources/Group32.svg");
+  content: url("/scoot/ressources/Group32.svg");
   width: 200px;
   height: 100px;
   top: 67%;
@@ -324,7 +324,7 @@ body {
 
 .features2__row2__rightSide::after {
   position: absolute;
-  content: url("/ressources/Group8Copy.svg");
+  content: url("/scoot/ressources/Group8Copy.svg");
   width: 200px;
   height: 100px;
   top: 0%;
@@ -333,7 +333,7 @@ body {
 
 .features2__row3__rightSide::after {
   position: absolute;
-  content: url("/ressources/Group32.svg");
+  content: url("/scoot/ressources/Group32.svg");
   width: 200px;
   height: 100px;
   top: 18%;
