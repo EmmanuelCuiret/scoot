@@ -38,7 +38,7 @@
 
 .h1__scoot {
   display: flex;
-  background-image: var(--dynamic-image-Scoot);
+  background-image: url("/ressources/Scoot.svg");
   background-repeat: no-repeat;
   align-items: center;
   width: 107.82px;
