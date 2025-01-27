@@ -13,20 +13,43 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
+    
+    <script>
+  async function loadHeader() {
+    try {
+      const response = await fetch('/header.html');
+      const data = await response.text();
+      document.getElementById('header').innerHTML = data;
+    } catch (error) {
+      console.error('Error loading header:', error);
+    }
+  }
+
+  loadHeader();
+
+</script>
+
+<script>
+  async function loadFooter() {
+    try {
+      const response = await fetch('/footer.html');
+      const data = await response.text();
+      document.getElementById('footer').innerHTML = data;
+    } catch (error) {
+      console.error('Error loading footer:', error);
+    }
+  }
+
+  loadFooter();
+</script>
+    
+    
 </head>
 
 <body>
 
   <div id="header"></div>
 
-  <script>
-    fetch('/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
 
   <div class="container__scooter">
     <section class="section_scooter">
@@ -146,14 +169,5 @@
 </body>
 
 <div id="footer"></div>
-
-<script>
-  fetch('/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
-</script>
 
 </html>
