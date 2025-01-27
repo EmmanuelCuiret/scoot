@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/ressources/BannerOthers.png");
+  background-image: url("/scoot/ressources/BannerOthers.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -166,7 +166,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: center;
-  background: url("/ressources/PinLocation.png") no-repeat;
+  background: url("/scoot/ressources/PinLocation.png") no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   height: 88px;
