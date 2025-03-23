@@ -4,7 +4,7 @@
 
 .header {
   width: 1110px;
-  height: 53px + 44px;
+  height: 96px;
   margin: 0 auto;
 }
 
@@ -13,8 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0;
   box-sizing: border-box;
+  text-align: center;
+  height: inherit;
 }
 
 .header-left > :first-child,
@@ -33,12 +34,12 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1440px - 180px;
-  gap: 100px;
+  gap: 58px;
 }
 
 .h1__scoot {
   display: flex;
-  background-image: url("/scoot/ressources/Scoot.svg");
+  background-image: url("/ressources/Scoot.svg");
   background-repeat: no-repeat;
   align-items: center;
   width: 107.82px;
@@ -55,8 +56,7 @@
   display: flex;
   list-style: none;
   justify-content: end;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 5px;
   color: #939caa;
   font-family: "Space Mono";
   font-size: 15px;
@@ -131,7 +131,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 96px;
-  padding: 35px 165px;
+  padding: 0px 165px;
   background-color: #333a44;
 }
 
@@ -146,6 +146,7 @@ footer {
   color: #939caa;
   font-size: 15px;
   font-weight: 700;
+  align-items: center;
 }
 
 .footer-links a:first-child {
@@ -174,7 +175,7 @@ footer {
 }
 
 .social-links-facebook {
-  background-image: url("/scoot/ressources/Facebook.svg");
+  background-image: url("/ressources/Facebook.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -182,12 +183,12 @@ footer {
 }
 
 .social-links-facebook:hover {
-  background-image: url("/scoot/ressources/Facebook2.svg");
+  background-image: url("/ressources/Facebook2.svg");
   cursor: pointer;
 }
 
 .social-links-twitter {
-  background-image: url("/scoot/ressources/Twitter.svg");
+  background-image: url("/ressources/Twitter.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -195,12 +196,12 @@ footer {
 }
 
 .social-links-twitter:hover {
-  background-image: url("/scoot/ressources/Twitter2.svg");
+  background-image: url("/ressources/Twitter2.svg");
   cursor: pointer;
 }
 
 .social-links-instagram {
-  background-image: url("/scoot/ressources/Instagram.svg");
+  background-image: url("/ressources/Instagram.svg");
   width: 24px;
   height: 24px;
   background-size: cover;
@@ -208,7 +209,7 @@ footer {
 }
 
 .social-links-instagram:hover {
-  background-image: url("/scoot/ressources/Instagram2.svg");
+  background-image: url("/ressources/Instagram2.svg");
   cursor: pointer;
 }
 

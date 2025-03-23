@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scoot - About</title>
-  <link rel="stylesheet" href="/scoot/styleHeaderFooter.css">
-  <link rel="stylesheet" href="/scoot/styleGlobal.css">
+  <link rel="stylesheet" href="/styleHeaderFooter.css">
+  <link rel="stylesheet" href="/styleGlobal.css">
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
   <script>
     async function loadHeader() {
       try {
-        const response = await fetch('/scoot/header.html');
+        const response = await fetch('/header.html');
         const data = await response.text();
         document.getElementById('header').innerHTML = data;
       } catch (error) {
@@ -33,7 +33,7 @@
   <script>
     async function loadFooter() {
       try {
-        const response = await fetch('/scoot/footer.html');
+        const response = await fetch('/footer.html');
         const data = await response.text();
         document.getElementById('footer').innerHTML = data;
       } catch (error) {
@@ -51,7 +51,7 @@
 
   <section class="banner">
     <div class="circles">
-      <img class="banner-container-3circles" src="/scoot/ressources/Group26.png" alt="3 circles">
+      <img class="banner-container-3circles" src="/ressources/Group26.png" alt="3 circles">
     </div>
     <div class="banner-container">
       <h1>About</h1>
@@ -67,9 +67,9 @@
             provide low cost, smart access to scooters at your fingertips.</p>
         </div>
         <div class="features2__row1__rightSide">
-          <img class="features2__1__img" src="/scoot/ressources/MobilityForThe DigitalEra.png"
+          <img class="features2__1__img" src="/ressources/MobilityForThe DigitalEra.png"
             alt="of a person using a phone">
-          <img class="features2__1__shadow__img" src="/scoot/ressources/RondMask.png" alt="Rond gris" />
+          <img class="features2__1__shadow__img" src="/ressources/RondMask.png" alt="Rond gris" />
           <img class="leftBottomArrow" />
         </div>
       </div>
@@ -81,11 +81,11 @@
             fully-electric and we offset the minimal carbon footprint for each ride.</p>
         </div>
         <div class="features2__row2__rightSide">
-          <img class="features2__2__shadow__img" src="/scoot/ressources/RondMask.png" alt="Rond gris" />
-          <img class="features2__2__img" src="/scoot/ressources/BetterUrbanLiving.png" alt="City scene with transportation">
+          <img class="features2__2__shadow__img" src="/ressources/RondMask.png" alt="Rond gris" />
+          <img class="features2__2__img" src="/ressources/BetterUrbanLiving.png" alt="City scene with transportation">
         </div>
-        <img class="prolongementMobility" src="/scoot/ressources/Path2.png" alt="Prolongement de la flèche">
-        <img class="prolongementBetter" src="/scoot/ressources/Path2.png" alt="Prolongement de la flèche">
+        <img class="prolongementMobility" src="/ressources/Path2.png" alt="Prolongement de la flèche">
+        <img class="prolongementBetter" src="/ressources/Path2.png" alt="Prolongement de la flèche">
       </div>
 
     </section>
@@ -96,10 +96,10 @@
     <div class="reasons">
       <div class="reason">
         <div class="reason_feature">
-          <img class="reason_feature_img" src="/scoot/ressources/OutTech.png" alt="OutTech" />
+          <img class="reason_feature_img" src="/ressources/OutTech.png" alt="OutTech" />
         </div>
         <div class="icon1">
-          <img src="/scoot/ressources/RondOrange.png" alt="Rond orange">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
         </div>
         <h3>Our tech</h3>
         <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully
@@ -107,10 +107,10 @@
       </div>
       <div class="reason">
         <div class="reason_feature">
-          <img class="reason_feature_img" src="/scoot/ressources/OurIntegrity.png" alt="OutIntegrity" />
+          <img class="reason_feature_img" src="/ressources/OurIntegrity.png" alt="OutIntegrity" />
         </div>
         <div class="icon2">
-          <img src="/scoot/ressources/RondOrange.png" alt="Rond orange">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
         </div>
         <h3>Our integrity</h3>
         <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in
@@ -119,10 +119,10 @@
       </div>
       <div class="reason">
         <div class="reason_feature">
-          <img class="reason_feature_img" src="/scoot/ressources/OurCommunity.png" alt="OutCommunity" />
+          <img class="reason_feature_img" src="/ressources/OurCommunity.png" alt="OutCommunity" />
         </div>
         <div class="icon3">
-          <img src="/scoot/ressources/RondOrange.png" alt="Rond orange">
+          <img src="/ressources/RondOrange.png" alt="Rond orange">
         </div>
         <h3>Our community</h3>
         <p>We support every community we serve. All workers are paid a living wage based on their location
@@ -144,7 +144,7 @@
       <div class="faq-right-side">
         <div class="faq-item">
           <button onclick="toggleContent(this)">How do I download the app?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores.
             An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be
@@ -152,13 +152,13 @@
         </div>
         <div class="faq-item">
           <button onclick="toggleContent(this)">Can I find a nearby Scoots?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">Yes, you can find nearby Scoots by enabling location services on the app.</div>
         </div>
         <div class="faq-item">
           <button onclick="toggleContent(this)">Do I need a license to ride?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">No, a license is not required for Scoot rides in most areas.</div>
         </div>
@@ -175,7 +175,7 @@
       <div class="faq-right-side">
         <div class="faq-item">
           <button onclick="toggleContent(this)">Should I wear a helmet?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">Yes, please do! All cities have different laws. But we strongly strongly strongly
             recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as
@@ -185,14 +185,14 @@
 
         <div class="faq-item">
           <button onclick="toggleContent(this)">How about the rules & regulations?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">Rules and regulations vary by location. Please check the app for details.</div>
         </div>
 
         <div class="faq-item">
           <button onclick="toggleContent(this)">What if I damage my Scoot?
-            <img class="chevron" src="/scoot/ressources/Chevron.png" alt="Chevron">
+            <img class="chevron" src="/ressources/Chevron.png" alt="Chevron">
           </button>
           <div class="content">In case of damage, please report it immediately through the app or contact support.</div>
         </div>

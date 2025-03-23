@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/scoot/ressources/BannerOthers.png");
+  background-image: url("/ressources/BannerOthers.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -63,7 +63,7 @@
 
 .features2__row1__rightSide::after {
   position: absolute;
-  content: url("/scoot/ressources/Group34.svg");
+  content: url("/ressources/Group34.svg");
   width: 200px;
   height: 100px;
   top: 59%;
@@ -187,7 +187,7 @@
 .icon3 {
   position: absolute;
   bottom: 0;
-  transform: translateY(-170%);
+  transform: translateY(-210%);
 }
 
 /**********/

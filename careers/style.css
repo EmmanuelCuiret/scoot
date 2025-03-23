@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/scoot/ressources/BannerOthers.png");
+  background-image: url("/ressources/BannerOthers.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -178,7 +178,7 @@
 .icon3 {
   position: absolute;
   bottom: 0;
-  transform: translateY(-170%);
+  transform: translateY(-210%);
 }
 
 .job-listings {

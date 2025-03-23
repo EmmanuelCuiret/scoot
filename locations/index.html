@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scoot - Locations</title>
-  <link rel="stylesheet" href="/scoot/styleHeaderFooter.css" />
-  <link rel="stylesheet" href="/scoot/styleGlobal.css">
+  <link rel="stylesheet" href="/styleHeaderFooter.css" />
+  <link rel="stylesheet" href="/styleGlobal.css">
 
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,34 +15,33 @@
     href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
     
-        <script>
-  async function loadHeader() {
-    try {
-      const response = await fetch('/scoot/header.html');
-      const data = await response.text();
-      document.getElementById('header').innerHTML = data;
-    } catch (error) {
-      console.error('Error loading header:', error);
+  <script>
+    async function loadHeader() {
+      try {
+        const response = await fetch('/header.html');
+        const data = await response.text();
+        document.getElementById('header').innerHTML = data;
+      } catch (error) {
+        console.error('Error loading header:', error);
+      }
     }
-  }
 
-  loadHeader();
+    loadHeader();
+  </script>
 
-</script>
-
-<script>
-  async function loadFooter() {
-    try {
-      const response = await fetch('/scoot/footer.html');
-      const data = await response.text();
-      document.getElementById('footer').innerHTML = data;
-    } catch (error) {
-      console.error('Error loading footer:', error);
+  <script>
+    async function loadFooter() {
+      try {
+        const response = await fetch('/footer.html');
+        const data = await response.text();
+        document.getElementById('footer').innerHTML = data;
+      } catch (error) {
+        console.error('Error loading footer:', error);
+      }
     }
-  }
 
-  loadFooter();
-</script>
+    loadFooter();
+  </script>
 </head>
 
 <body>
@@ -51,17 +50,16 @@
 
   <section class="banner">
     <div class="circles">
-      <img class="banner-container-3circles" src="/scoot/ressources/Group26.png" alt="3 circles">
+      <img class="banner-container-3circles" src="/ressources/Group26.png" alt="3 circles">
     </div>
     <div class="banner-container">
       <h1>Locations</h1>
     </div>
   </section>
 
-
   <section class="locations">
     <div class="map">
-      <img class="map-img" src="/scoot/ressources/Carteblanche.png">
+      <img class="map-img" src="/ressources/Carteblanche.png">
 
       <div class="pin_container pin_container_position1">
         <div class="pin_text pin1">New York</div>

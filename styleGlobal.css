@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  box-sizing: border-box;
 
   /*
   border: 1px solid red;
@@ -25,7 +26,7 @@ body {
   --dynamic-image-OurIntegrity: url("/ressources/OurIntegrity.png");
   --dynamic-image-OurTech: url("/ressources/OurTech.png");
   --dynamic-image-RondOrange: url("/ressources/RondOrange.png");
-  --dynamic-image-ScooterSharingMadeSimple: url("/scoot/ressources/ScooterSharingMadeSimple.jpg");
+  --dynamic-image-ScooterSharingMadeSimple: url("/ressources/ScooterSharingMadeSimple.jpg");
   --dynamic-image-ZeroHasslePayments: url("/ressources/ZeroHasslePayments.png");
   --dynamic-image-PinLocation: url("/ressources/PinLocation.png");
 
@@ -92,7 +93,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/scoot/ressources/ScooterSharingMadeSimple.jpg");
+  background-image: url("/ressources/ScooterSharingMadeSimple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
@@ -110,7 +111,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 280px;
 }
 
 .scooter__h2 {
@@ -122,6 +122,9 @@ body {
   line-height: 56px;
   width: 500px;
   height: 112px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 35px
 }
 
 .scooter__p {
@@ -134,13 +137,13 @@ body {
   width: 405px;
   height: 100px;
   margin-left: auto;
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .scooter__p:before {
   position: absolute;
-  content: url("/scoot/ressources/Path2.png");
-  top: 80%;
+  content: url("/ressources/Path2.png");
+  top: 45%;
   left: -10050px;
   width: 100vw;
   height: auto;
@@ -148,11 +151,11 @@ body {
 
 .scooter__p:after {
   position: absolute;
-  content: url("/scoot/ressources/Group8Copy.svg");
-  top: 80%;
+  content: url("/ressources/Group8Copy.svg");
+  top: 45%;
   left: 112%;
 }
-
+&
 .addon_img__scooter {
   margin-left: 95px;
 }
@@ -161,8 +164,8 @@ body {
   position: relative;
   width: 234px;
   height: 62px;
-  top: 135px;
-  left: 650px;
+  top: 125px;
+  left: 680px;
 }
 
 /*******************************/
@@ -188,7 +191,7 @@ body {
   margin-left: -9999px;
   width: 10800px;
   height: 15px;
-  top: 35px;
+  top: 20px;
   z-index: -1;
 }
 
@@ -305,7 +308,7 @@ body {
 
 .features2__row1__rightSide::after {
   position: absolute;
-  content: url("/scoot/ressources/Group32.svg");
+  content: url("/ressources/Group32.svg");
   width: 200px;
   height: 100px;
   top: 67%;
@@ -314,7 +317,7 @@ body {
 
 .features2__row2__rightSide::after {
   position: absolute;
-  content: url("/scoot/ressources/Group8Copy.svg");
+  content: url("/ressources/Group8Copy.svg");
   width: 200px;
   height: 100px;
   top: 0%;
@@ -323,7 +326,7 @@ body {
 
 .features2__row3__rightSide::after {
   position: absolute;
-  content: url("/scoot/ressources/Group32.svg");
+  content: url("/ressources/Group32.svg");
   width: 200px;
   height: 100px;
   top: 18%;
